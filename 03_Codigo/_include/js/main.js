@@ -169,7 +169,6 @@ MAPPS.contactForm = function(){
 
 MAPPS.tweetFeed = function(){
 	var valueTop = -64;
-	
     $("#ticker").tweet({
           username: "gagarciaj",
           page: 1,
@@ -190,7 +189,6 @@ MAPPS.tweetFeed = function(){
 	  };
 	  ticker();
 	});
-	
 }
 
 MAPPS.menu = function(){
