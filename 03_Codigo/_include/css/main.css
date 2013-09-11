@@ -8,7 +8,7 @@ html, hmtl a {
 }
 
 body {
-	font-weight:300;
+	font-weight:500;
 	font-size:16px;
 	font-family: Helvetica, Arial, sans-serif;
 	line-height:1.1em;
@@ -169,7 +169,7 @@ h4,
 h5,
 h6{
 	margin:0 0 20px 0;
-	font-weight:300;
+	font-weight:500;
 	font-family: Helvetica, Arial, sans-serif;
 	line-height:1.5em;
 }
@@ -199,9 +199,9 @@ h6 {
 }
 
 h3.spec {
-	color: #FFFFFF;
+	color: #fff;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1em;
     margin-bottom: 30px;
 }
@@ -246,173 +246,6 @@ h3.spec {
 	margin-bottom:80px !important;
 }
 
-#home-slider {
-	position: relative;
-	overflow: hidden;
-	height: 100%;
-}
-
-#home-slider .overlay { 
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #eee;
-	opacity: 0.1;
-	filter: alpha(opacity=70);
-	z-index: 0;
-}
-
-#home-slider .slider-text {
-	position: absolute;
-	left: 50%;
-	top: 20%;
-	margin: -150px 0 0 -585px;
-	width: 1170px;
-	height: 250px;
-	text-align: center;
-	z-index: 2;	
-}
-
-#home-slider #slidecaption {
-	width: 100%;
-	line-height: 250px;
-	margin: 0;
-	text-align: center;
-	text-shadow: none;	
-}
-
-#home-slider .slide-content {
-	font-size: 60px;
-	color: #FFFFFF;
-	letter-spacing: -3px;
-}
-
-#home-slider .control-nav {
-	position: absolute;
-	width: 100%;
-	background: #fff;
-	height: 30px;
-	bottom: 0;
-	z-index: 2;
-}
-
-#home-slider #nextslide,
-#home-slider #prevslide {
-	background-image: none;
-	background: #6b6b6b;
-	display: inline-block;
-	margin: 0;
-	position: relative;
-	top: 0;
-	left: 0;
-	right: 0;
-	width: 30px;
-	height: 30px;
-	opacity: 1;
-	filter: alpha(opacity=100);
-	transition: background 0.1s linear 0s;
-}
-
-#home-slider #nextslide {
-	margin-left: -3px;	
-}
-
-#home-slider #nextsection {
-	float:right;
-}
-
-#home-slider #nextslide:hover,
-#home-slider #prevslide:hover {
-	background-color:#f26f21;
-}
-
-#home-slider #nextslide i,
-#home-slider #prevslide i {
-	font-size: 16px;
-	color: #FFFFFF;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-top: -7px;
-	line-height: 1em;
-}
-
-#home-slider #nextslide i {
-	margin-left: -8px;	
-}
-
-#home-slider #prevslide i {
-	margin-left: -9px;	
-}
-
-#home-slider ul#slide-list {
-	top: 50%;
-	padding: 0;
-	margin:-6px 0 0 0;	
-}
-
-#home-slider ul#slide-list li {
-	margin-right: 12px;
-}
-
-#home-slider ul#slide-list li:last-child {
-	margin-right: 0;	
-}
-
-#home-slider ul#slide-list li a {
-	background-color: #e5e5e5;
-	background-image: none;
-	width: 12px;
-	height: 12px;
-	-webkit-border-radius: 999px;
-	-moz-border-radius: 999px;
-	border-radius: 999px;
-	-webkit-transition: background 0.1s linear 0s;
-	-moz-transition: background 0.1s linear 0s;
-	-o-transition: background 0.1s linear 0s;
-	transition: background 0.1s linear 0s;
-}
-
-#home-slider ul#slide-list li a:hover {
-	background-color: #FFFFFF;	
-}
-
-#home-slider ul#slide-list li.current-slide a,
-#home-slider ul#slide-list li.current-slide a:hover {
-	background-color:#f26f21;
-}
-
-#home-slider #nextsection {
-	background-color: #6b6b6b;
-	margin: 0;
-	position: relative;
-	float:right;
-	width: 30px;
-	height: 30px;
-	-webkit-transition: background 0.1s linear 0s;	
-	-moz-transition: background 0.1s linear 0s;
-	-o-transition: background 0.1s linear 0s;
-	transition: background 0.1s linear 0s;
-}
-
-#home-slider #nextsection:hover {
-	background-color:#f26f21;
-}
-
-#home-slider #nextsection i {
-	font-size: 16px;
-	color: #FFFFFF;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-top: -7px;
-	line-height: 1em;
-}
-
-#home-slider #nextsection i {
-	margin-left: -7px;	
-}
-
 header {
 	width: 100%;
 	z-index: 99;
@@ -421,11 +254,11 @@ header {
 header .sticky-nav {
 	position: relative;
 	width: 100%;
-	height: 30px;
+	height: 98px;
 	z-index: 1001;
-	background: #6b6b6b;
-	border-bottom: 1px #fff solid;
 	clear: both;
+	background: #6b6b6b;
+	box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 0;
 }
 
 header .sticky-nav.stuck {
@@ -435,17 +268,21 @@ header .sticky-nav.stuck {
 	z-index: 1001;
 }
 
+header #logo-wrapper {
+	height:68px;
+	background:#fff;	
+}
+
 header #logo {
-	color: #FFFFFF;
 	float: left;
 	padding: 0;
 	margin-left: 20px;
 }
 
 header #logo a {
-	background: url(../img/logo.png) no-repeat;
-	width: 96px;
-	height: 30px;
+	background: url(../img/logoMapps162x68.png) no-repeat;
+	width: 162px;
+	height: 68px;
 	text-indent: -9999px;
 	display: block;
 	opacity: 1;
@@ -501,7 +338,7 @@ nav#menu #menu-nav li a:hover {
 	width: 16px;
 	height: 16px;
 	display: block;
-	margin: 22px 0 0 0;
+	margin: 8px 0 0 0;
 	-webkit-transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
 	-ms-transform: rotate(0deg);
@@ -561,14 +398,14 @@ nav#menu #menu-nav li a:hover {
 
 .page-alternate {
 	background: #f6f6f6;
-	padding: 80px 0;
+	padding: 50px 0;
 	position: relative;
 	z-index: 99;
 }
 
 .title-page {
 	text-align: center;
-	margin-bottom: 80px;	
+	margin-bottom: 60px;	
 }
 
 .title-page .title {
@@ -580,7 +417,8 @@ nav#menu #menu-nav li a:hover {
 }
 
 .title-page .title-description {
-	font-size: 1em;
+	font-size: 1.2em;
+	font-weight: 500;
 	line-height: 1.6em;
 	margin: 0;
 }
@@ -606,7 +444,7 @@ nav#menu #menu-nav li a:hover {
 
 .work-nav #filters li a {
 	color: #7F8289;
-	font-size: 16px;
+	font-size: 1.2em;
 	display: block;	
 }
 
@@ -690,11 +528,16 @@ nav#menu #menu-nav li a:hover {
 }
 
 .profile-name {
+	font-weight: 500;
+	font-size: 2em;
+	letter-spacing: -2px;
+	line-height: 1.1em;
 	margin-bottom: 15px;	
 }
 
 .profile-description {
 	margin-bottom: 25px;	
+	font-weight: 500;
 }
 
 .image-wrap {
@@ -713,7 +556,6 @@ nav#menu #menu-nav li a:hover {
 	display: block;
 	width: 100%;
 	height: 100%;
-	
 	opacity: 0;
 	filter: alpha(opacity=0);
 	-webkit-transition: all 450ms ease-out 0s;
@@ -821,7 +663,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 #contact-form p {
-	margin-bottom: 1px;	
+	margin-bottom: 1px;
 }
 
 #contact-form input,
@@ -926,6 +768,10 @@ nav#menu #menu-nav li a:hover {
 	color: #FFFFFF;	
 }
 
+#new-releases {
+    text-align: center;
+}
+
 #social-area {
     text-align: center;
 }
@@ -1005,6 +851,8 @@ nav#menu #menu-nav li a:hover {
 
 footer {
 	position: relative;
+	font-size: .8em;
+	font-weight: 200;
 	width: 100%;
 	height: auto;
 	background: #f6f6f6;
@@ -1013,8 +861,6 @@ footer {
 }
 
 footer .credits {
-	color: #7F8289;
-	font-size: 13px;
 	margin-bottom: 0;
 	padding: 20px 0;
 }
