@@ -798,22 +798,21 @@ nav#menu #menu-nav li a:hover {
 }
 
 .contact-details h3 {
-	color: #f26f21;
-    font-size: 24px;
-    font-weight: 300;
-    
-	line-height: 1em;
+    font-size: 2em;
+    font-weight: 500;
+	line-height: 1.1em;
 }
 
 .contact-details ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;	
+	list-style: none;
+	font-weight: 500;	
 }
 
 .contact-details ul li {
 	margin: 0 0 20px;
-	line-height: 28px;
+	line-height: 1.1em;
 	padding: 0;	
 }
 
