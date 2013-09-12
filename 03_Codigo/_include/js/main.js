@@ -117,41 +117,13 @@ $(function() {
 		});
 	}
 
-	mapps.goHomepage = function(){
-		$('#goHomepage').on('click', function(){
+	mapps.scrollToHome = function(){
+		$('#scrollToHome').on('click', function(){
 			$target = $($(this).attr('href')).offset().top;
 			
 			$('body, html').animate({scrollTop : "0"}, 750, 'easeOutExpo');
 			return false;
 		});
-	}
-
-	mapps.scrollToTop = function(){
-		var windowWidth = $(window).width(),
-			didScroll = false;
-
-		var $arrow = $('#back-to-top');
-
-		$arrow.click(function(e) {
-			$('body,html').animate({ scrollTop: "0" }, 750, 'easeOutExpo' );
-			e.preventDefault();
-		})
-
-		$(window).scroll(function() {
-			didScroll = true;
-		});
-
-		setInterval(function() {
-			if( didScroll ) {
-				didScroll = false;
-
-				if( $(window).scrollTop() > 1000 ) {
-					$arrow.css('display', 'block');
-				} else {
-					$arrow.css('display', 'none');
-				}
-			}
-		}, 250);
 	}
 
 	mapps.utils = function(){
@@ -211,48 +183,114 @@ $(function() {
 	    $('a[data-toggle=tooltip]').tooltip();
 	}
 
-	$(document).ready(function(){
-		Modernizr.load([
-		{
-			test: Modernizr.placeholder,
-			nope: '_include/js/placeholder.js', 
-			complete : function() {
-				if (!Modernizr.placeholder) {
-					Placeholders.init({
-						live: true,
-						hideOnFocus: false,
-						className: "yourClass",
-						textColor: "#999"
-					});
-				}
+	Modernizr.load([
+	{
+		test: Modernizr.placeholder,
+		nope: '_include/js/placeholder.js', 
+		complete : function() {
+			if (!Modernizr.placeholder) {
+				Placeholders.init({
+					live: true,
+					hideOnFocus: false,
+					className: "yourClass",
+					textColor: "#999"
+				});
 			}
-		}]);
-		
-		$('body').jpreLoader({
+		}
+	}]);
+
+	$('body').jpreLoader({
 			splashID: "#loader",
 			showSplash: true,
 			showPercentage: true,
 			autoClose: true,
 			splashFunction: function() {
 				$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
-			}
-		});
-		
-		mapps.nav();
-		mapps.mobileNav();
-		mapps.listenerMenu();
-		mapps.menuNav();
-		mapps.goHomepage();
-		mapps.filter();
-		mapps.fancyBox();
-		mapps.scrollToTop();
-		mapps.utils();
-		mapps.accordion();
-		mapps.toggle();
-		mapps.toolTip();
+		}
 	});
 
-	$(window).resize(function(){
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=381529251973399";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+		
+	mapps.nav();
+	mapps.mobileNav();
+	mapps.listenerMenu();
+	mapps.menuNav();
+	mapps.scrollToHome();
+	mapps.filter();
+	mapps.fancyBox();
+	mapps.utils();
+	mapps.accordion();
+	mapps.toggle();
+	mapps.toolTip();
+
+	$('#login-response-text').hide();
+	$('#contact-response-text').hide();
+
+	$('#login-button').click(function() {
+		var user = $('#username').val();
+		var pass = $('#userpass').val();
+		var exception = '';
+
+		$('#login-response-text').hide('slow').empty();
+		if (user === '') exception += '<span class="font-icon-info"></span>&nbsp;Debes proporcionar tu nombre de usuario.<br>';
+		if (pass === '') exception += '<span class="font-icon-info"></span>&nbsp;Debes proporcionar tu contraseña.<br>';
+		
+		if(exception !== '') {
+			$('#login-response-text').html(exception);
+			$('#login-response-text').show("slow");
+			$('#username').focus();
+
+			return;
+		}
+
+		window.location = '#';
+	});
+
+	$('#clear-login-button').click(function() {
+		$('#username').val('');
+		$('#userpass').val('');
+		$('#username').focus();
+		$('#login-response-text').hide('slow');
+	});
+
+
+	$('#contact-submit-button').click(function() {
+		var name = $('#contact-name').val();
+		var email = $('#contact-email').val();
+		var msj = $('#contact-message').val();
+		var exception = '';
+
+		$('#contact-response-text').hide('slow').empty();
+		if (name === '') exception += '<span class="font-icon-info"></span>&nbsp;Debes proporcionar tu nombre.<br>';
+		if (email === '') exception += '<span class="font-icon-info"></span>&nbsp;Debes proporcionar tu e-mail.<br>';
+		if (msj === '') exception += '<span class="font-icon-info"></span>&nbsp;Aún no compartes nada con nosotros :(<br>';
+		
+		if(exception !== '') {
+			$('#contact-response-text').html(exception);
+			$('#contact-response-text').show("slow");
+			return;
+		}
+		
+		$('#contact-name').val('');
+		$('#contact-email').val('');
+		$('#contact-message').val('');
+		$('#contact-response-text').html('<span class="font-icon-ok-sign">&nbsp;¡Enhorabuena, tú mensaje ha sido enviado correctamente!').show("slow");
+	});
+
+	$('#clear-contact-submit').click(function() {
+		$('#contact-name').val('');
+		$('#contact-email').val('');
+		$('#contact-message').val('');
+		$('#contact-response-text').hide('slow');
+	});
+	
+		$(window).resize(function(){
 		mapps.mobileNav();
 	});
 });
