@@ -9,11 +9,10 @@
   	-webkit-border-radius: 0;
        -moz-border-radius: 0;
             border-radius: 0;
-  	background-color: #3C3F45;
-  	color: #23262C;
+  	background-color: #6b6b6b;
+  	color: #fff;
   	vertical-align: middle;
   	text-align: center;
-  	text-transform: uppercase;
   	font-weight:500;
   	font-size: 16px;
   	cursor: pointer;
@@ -91,7 +90,7 @@
 	color: #23262C;
 	font-size: 18px;
 	font-weight: 600;
-	text-transform: uppercase;
+	
 	
 	-webkit-transition: all 0.1s linear 0s;
 	-moz-transition: all 0.1s linear 0s;
@@ -264,7 +263,7 @@
   	color: #23262C;
   	font-size: 18px;
 	font-weight: 600;
-	text-transform: uppercase;
+	
 	border: none;
   	-webkit-border-radius: 0;
        -moz-border-radius: 0;
@@ -490,12 +489,17 @@ blockquote small:before {
 }
 
 .info-block h3 {
-    font-size: 24px;
-	line-height: 1em;
-	text-transform: uppercase;
+  font-size: 24px;
+	line-height: 0;
+}
+
+.info-block cite {
+  font-size: .8em;
+  line-height: 0;
 }
 
 .info-block p {
+  margin-top: 20px;
 	margin-bottom: 0;	
 }
 

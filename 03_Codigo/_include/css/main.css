@@ -199,11 +199,9 @@ h6 {
 }
 
 h3.spec {
-	color: #fff;
-    font-size: 24px;
+    font-size: 2em;
     font-weight: 500;
-    line-height: 1em;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .margin-0 {
@@ -744,17 +742,16 @@ nav#menu #menu-nav li a:hover {
 }
 
 .response-text {
-	background: #ffffbf;
-	border: 1px solid #ffd24d;
-  	border-radius: 8px;
-	color: #f26f21;
+	background: #E56C69;
+	color: #fff;
   	font-size:.8em;
   	font-weight: 500;
+  	margin-left: 3px;
   	margin-top: 20px;
   	padding: 10px 20px 10px 20px;
 }
 
-#new-releases, #social-area, #blog{
+#new-releases, #social-area{
     text-align: center;
 }
 
