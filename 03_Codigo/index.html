@@ -1,408 +1,1436 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Laboratorio de aplicaciones m&oacute;viles fundado orgullosamente por mexicanos."> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="HandheldFriendly" content="true">
-        <meta name="MobileOptimized" content="320">
-        <title>Mapps&reg; Aplicaciones m&oacute;viles hechas en M&eacute;xico</title>
-        <link rel="stylesheet" type="text/css" href="_include/css/site.css">
-        <link rel="stylesheet" type="text/css" href="_include/css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" type="text/css" href="_include/css/responsive.css">
-        <link rel="icon" type="image/png" href="_include/img/shortcut-icon.png">
-        <link rel="shortcut icon" type="image/png" href="_include/img/shortcut-icon.png">
-        <link rel="apple-touch-icon" type="image/png" href="_include/img/shortcut-icon.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="#">
-        <link rel="apple-touch-icon" sizes="72x72" href="#">
-        <link rel="apple-touch-icon" sizes="144x144" href="#">
-    </head>
-    <body>
-        <section id="fb-root"></section>
-        <section class="ole">
-            <section id="loader">
-                <section id="circle"></section>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Mapps | Aplicaciones móviles</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/vector-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style_text.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/sprites.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/slider.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/image_hover.css">
+    <link rel="stylesheet" type="text/css" href="css/image_animation.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/m-popup.css">
+</head>
+<body class="onepage" data-spy="scroll" data-target=".navigation">
+    <section id="hideAll"></section>
+    <a id="index">
+    <nav class="light sticky-nav navigation">
+        <section class="container clearfix">
+            <section class="four columns row-fluid">
+                <section class="logo large">
+                    <a href="#index"><img src="images/main_logo.png" alt="Logo"></a>
+                </section>
+            </section>
+            <section id="main-menu" class="twelve columns row-fluid">
+                <section id="mobnav-btn"><span class="icon-menu-3"></span>Menu</section>
+                <ul class="main-menu large nav sf-menu">
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </section>
         </section>
-        <header>
-            <section class="sticky-nav">
-                <section id="logo-wrapper">
-                    <section id="logo">
-                        <a id="scrollToHome" href="#new-releases"></a>
-                    </section>
-                </section>
-                <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-                <nav id="menu">
-                    <ul id="menu-nav">
-                        <li class="current"><a href="#new-releases">Inicio</a></li>
-                        <li><a href="#our-apps">Apps</a></li>
-                        <li><a href="#team">Iniciativa M&oacute;vil</a></li>
-                        <li><a href="#customer">Membres&iacute;a</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul>
-                </nav>
-            </section>
-        </header>
-        <section id="new-releases" class="page-alternate">
-            <section class="container">
-                <section class="row">
-                    <section class="span12">
-                        <section class="title-page">
-                            <h2 class="title">C&oacute;noce nuestra nueva Mapps DF&nbsp;&reg;</h2>
-                        </section>
-                        <img id="new-release" alt="new-release">
-                    </section>
-                </section>
-            </section>
-        </section>
-        <section id="our-apps" class="page">
-            <section class="container">
-                <section class="row">
-                    <section class="span12">
-                        <section class="title-page">
-                            <h2 class="title">Nuestras apps m&oacute;viles</h2>
-                            <h3 class="title-description">C&oacute;noce la l&iacute;nea de aplicaciones que nos llenan de orgullo, esperamos que te sirvan tanto como a nosotros.</a></h3>
-                        </section>
-                    </section>
-                </section>
-                <section class="row">
-                	<section class="span3">
-                        <nav id="options" class="work-nav">
-                            <ul id="filters" class="option-set" data-option-key="filter">
-                                <li class="type-work"><span class="font-icon-grid">&nbsp;Filtra por tipo de app </li>
-                                <li><a href="#filter" data-option-value="*" class="selected"><span class="font-icon-list-3">&nbsp;Todas las apps</a></li>
-                                <li><a href="#filter" data-option-value=".design"><span class="font-icon-pushpin-2">&nbsp;Apps de asistencia al pasajero</a></li>
-                                <li><a href="#filter" data-option-value=".video"><span class="font-icon-plus-sign">&nbsp;Otras apps</a></li>
-                            </ul>
-                        </nav>
-                    </section>
-                    <section class="span9">
-                    	<section class="row">
-                        	<section id="mobile_apps">
-                            	<ul id="thumbs">
-                                	<li class="item-thumbs span3 design">
-                                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Mapps DF" href="_include/img/work/full/image-01-full.jpg">
-                                        	<span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <img src="_include/img/work/thumbs/image-01.jpg" alt="Aplicaci&oacute;n de viaje asistido para plataformas m&oacute;viles, sus objetivos son calcular, redactar, representar gr&aacute;ficamente rutas &oacute;ptimas de viaje (en tiempo y costo) as&iacute; como ofrecer informaci&oacute;n de inter&eacute;s y seguridad al p&uacute;blico usuario del sistema colectivo de la Ciudad de M&eacute;xico.<br>Esta herramienta es capaz de ponderar resultados y contenidos considerando factores de tiempo, distancia y afluencia.">
-                                    </li>
-                                	<li class="item-thumbs span3 design">
-                                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Pr&oacute;ximamente" href="_include/img/work/full/image-02-full.jpg">
-                                        	<span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <img src="_include/img/work/thumbs/image-02.jpg" alt="Pr&oacute;ximamente.">
-                                    </li>
-                                	<li class="item-thumbs span3 photography">
-                                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Pr&oacute;ximamente" href="_include/img/work/full/image-03-full.jpg">
-                                        	<span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <img src="_include/img/work/thumbs/image-03.jpg" alt="Pr&oacute;ximamente.">
-                                    </li>
-                                	<li class="item-thumbs span3 video">
-                                    	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Pr&oacute;ximamente" href="http://vimeo.com/51460511">
-                                        	<span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <img src="_include/img/work/thumbs/image-08.jpg" alt="Pr&oacute;ximamente.">
-                                    </li>
-                                	<li class="item-thumbs span3 photography">
-                                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Pr&oacute;ximamente" href="_include/img/work/full/image-04-full.jpg">
-                                        	<span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <img src="_include/img/work/thumbs/image-04.jpg" alt="Pr&oacute;ximamente.">
-                                    </li>
-                                	<li class="item-thumbs span3 photography">
-                                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Pr&oacute;ximamente" href="_include/img/work/full/image-05-full.jpg">
-                                        	<span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <img src="_include/img/work/thumbs/image-05.jpg" alt="Pr&oacute;ximamente.">
-                                    </li>
-                                	<li class="item-thumbs span3 video">
-                                    	<a class="hover-wrap fancybox-media" data-fancybox-group="video" title="Pr&oacute;ximamente" href="http://vimeo.com/50834315">
-                                        	<span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <img src="_include/img/work/thumbs/image-09.jpg" alt="Pr&oacute;ximamente.">
-                                    </li>
-                                	<li class="item-thumbs span3 design">
-                                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Pr&oacute;ximamente" href="_include/img/work/full/image-06-full.jpg">
-                                        	<span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <img src="_include/img/work/thumbs/image-06.jpg" alt="Pr&oacute;ximamente.">
-                                    </li>
-                                	<li class="item-thumbs span3 design">
-                                    	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Pr&oacute;ximamente" href="_include/img/work/full/image-07-full.jpg">
-                                        	<span class="overlay-img"></span>
-                                            <span class="overlay-img-thumb font-icon-plus"></span>
-                                        </a>
-                                        <img src="_include/img/work/thumbs/image-07.jpg" alt="Pr&oacute;ximamente.">
-                                    </li>
-                                </ul>
-                            </section>
-                    	</section>
-                    </section>
-                </section>
+    </nav>
+    <div class="wrapper">
+        <section class="fullwidthbanner-container">
+            <section class="fullwidthbanner">
+                <ul>
+                    <li data-transition="slideup" data-slotamount="1">
+                        <img src="images/slides/slider2.jpg" alt="slide background">
+                        <article class="caption sft stt size32 line_28 color_white uppercase shadow"
+                            data-x="199" data-y="99" 
+                            data-speed="800" data-start="700" data-easing="easeInBack"
+                            data-end="8400" data-endspeed="700" 
+                            data-endeasing="easeOutBack">Fully Responsive & Retina Ready
+                        </article>
+                        <article class="caption sft stt size22 line_22 color_sky common_fonts" 
+                            data-x="232" data-y="149" 
+                            data-speed="700" data-start="800" data-easing="easeInBack"
+                            data-end="8300" data-endspeed="700" 
+                            data-endeasing="easeOutBack">Mobile Friendly,  Clean & High Quality Designs.
+                        </article>
+                        <div class="caption sfb stb image-caption"
+							data-x="103" 
+                            data-y="219"
+                            data-speed="800" data-start="1200" data-easing="easeOutBack"
+                            data-end="8400" data-endspeed="800"
+							data-endeasing="easeOutBack"><img src="images/slides/macbook.png" alt="Image 4"></div>
+                        <div class="caption sfb stb image-caption"
+							data-x="428" 
+                            data-y="280"
+                            data-speed="800" data-start="1400" data-easing="easeOutBack"
+                            data-end="8200" data-endspeed="800"
+							data-endeasing="easeOutBack"><img src="images/slides/plus.png" alt="Image 4"></div>
+                        <div class="caption sfb stb image-caption"
+							data-x="528" 
+                            data-y="252"
+                            data-speed="800" data-start="1600" data-easing="easeOutBack"
+                            data-end="8000" data-endspeed="800"
+							data-endeasing="easeOutBack"><img src="images/slides/ipad.png" alt="Image 4"></div>
+                        <div class="caption sfb stb image-caption"
+							data-x="648" 
+                            data-y="280"
+                            data-speed="800" data-start="1800" data-easing="easeOutBack"
+                            data-end="7800" data-endspeed="800"
+							data-endeasing="easeOutBack"><img src="images/slides/plus.png" alt="Image 4"></div>
+                        <div class="caption sfb stb image-caption"
+							data-x="725" 
+                            data-y="271"
+                            data-speed="800" data-start="2000" data-easing="easeOutBack"
+                            data-end="7600" data-endspeed="800"
+							data-endeasing="easeOutBack"><img src="images/slides/iphone.png" alt="Image 4"></div>
+                    </li>
+                    <!-- THE THIRD SLIDE -->
+                    <li data-transition="slideleft" data-slotamount="1">
+                        <img src="images/slides/slider3.jpg" alt="slide background" />
+                        <div class="caption sft stt size42 line_22 color_sky uppercase shadow sky_border" 
+                            data-x="350" data-y="105" 
+                            data-speed="1000" data-start="600" data-easing="easeInBack"
+                            data-end="8700" data-endspeed="1000" 
+                        data-endeasing="easeOutBack" >All of Above</div>
+                        <div class="caption sfl stl size30 line_40 color_white uppercase shadow line_border" 
+                            data-x="86" data-y="221" 
+                            data-speed="1000" data-start="1000" data-easing="easeInBack"
+                            data-end="8700" data-endspeed="1000" 
+                        data-endeasing="easeOutBack" >Simple & Clean Designs</div>
+                        <div class="caption sfl stl size30 line_40 color_white uppercase shadow line_border" 
+                            data-x="86" data-y="265" 
+                            data-speed="1000" data-start="1000" data-easing="easeInBack"
+                            data-end="8700" data-endspeed="1000" 
+                        data-endeasing="easeOutBack" >Parallax Slyte</div>
+                        <div class="caption sfl stl size30 line_40 color_white uppercase shadow line_border" 
+                            data-x="86" data-y="309" 
+                            data-speed="1000" data-start="1000" data-easing="easeInBack"
+                            data-end="8700" data-endspeed="1000" 
+                        data-endeasing="easeOutBack" >Unlimited Colors</div>
+                        <div class="caption sfr str size30 line_40 color_white uppercase shadow line_border" 
+                            data-x="555" data-y="221" 
+                            data-speed="1000" data-start="1400" data-easing="easeInBack"
+                            data-end="8400" data-endspeed="1000" 
+                        data-endeasing="easeOutBack" >Font Icons</div>
+                        <div class="caption sfr str size30 line_40 color_white uppercase shadow line_border" 
+                            data-x="555" data-y="265" 
+                            data-speed="1000" data-start="1400" data-easing="easeInBack"
+                            data-end="8400" data-endspeed="1000" 
+                        data-endeasing="easeOutBack" >Advance Admin Panel</div>
+                        <div class="caption sfr str size30 line_40 color_white uppercase shadow line_border" 
+                            data-x="555" data-y="309" 
+                            data-speed="1000" data-start="1400" data-easing="easeInBack"
+                            data-end="8400" data-endspeed="1000" 
+                        data-endeasing="easeOutBack" >Highly Customizable</div>
+                    </li>
+                    <!-- THE FOURTH SLIDE -->
+                    <li data-transition="slideright" data-slotamount="1">
+                        <img src="images/slides/slider4.jpg" alt="slide background" />
+                        <div class="caption sft stt size35 line_22 color_white uppercase shadow common_fonts" 
+                            data-x="253" data-y="160" 
+                            data-speed="900" data-start="600" data-easing="easeInBack"
+                            data-end="8900" data-endspeed="800" 
+                        data-endeasing="easeOutBack" >Build by professionals</div>
+                        <div class="caption sfl stl size28 bg_sky line_45 color_white shadow" 
+                            data-x="156" data-y="209" 
+                            data-speed="900" data-start="1000" data-easing="easeInQuad"
+                            data-end="8600" data-endspeed="900" 
+                        data-endeasing="easeOutBack">Pioneer is Suitable for Any Business, Portfolio,</div> 
+                        <div class="caption sfr str size28 bg_sky line_45 color_white shadow" 
+                            data-x="256" data-y="264" 
+                            data-speed="900" data-start="1400" data-easing="easeInQuad"
+                            data-end="8200" data-endspeed="900" 
+                        data-endeasing="easeOutBack">Agency and Personal Websites</div> 
+                        <div class="caption sfb stb size14 btn line_22 bold" 
+                            data-x="415" data-y="340" 
+                            data-speed="900" data-start="1800" data-easing="easeInQuad"
+                            data-end="7800" data-endspeed="900" 
+                        data-endeasing="easeOutBack"><a href="#">Purchase Now</a></div> 
+                    </li>
+				</ul>
+                <section class="tp-bannertimer"></section>
             </section>
         </section>
-        <section id="team" class="page-alternate">
-            <section class="container">
-                <section class="row">
-                    <section class="span12">
-                        <section class="title-page">
-                            <h2 class="title">Equipo Iniciativa M&oacute;vil</h2>
-                            <h3 class="title-description">Somos la combinaci&oacute;n de la experiencia, talento, nuevas ideas, conocimiento, creatividad, y trabajo duro.</h3>
-                        </section>
-                    </section>
-                </section>
-                <section class="row">
-                     <article class="span4 profile">
-                        <section class="image-wrap">
-                            <section class="hover-wrap">
-                                <span class="overlay-img"></span>
-                                <span class="overlay-text-thumb">Fundador &amp; CEO
-                            </section>
-                            <img src="_include/img/profile/profile-03.jpg" alt="Giovanni Garc&iacute;a">
-                        </section>
-                        <h3 class="profile-name">Giovanni Garc&iacute;a</h3>
-                        <p class="profile-description">MCP, desarrollador ent&uacute;siasta y hombre afortunado de pertenecer al equipo de esta aventura llamada Iniciativa M&oacute;vil.</p>
-                        <section class="social">
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                            </ul>
-                        </section>
-                    </article>
-                    <article class="span4 profile">
-                        <section class="image-wrap">
-                            <section class="hover-wrap">
-                                <span class="overlay-img"></span>
-                                <span class="overlay-text-thumb">Fundador &amp; Director Ejecutivo /<br>Led Engineer</span>
-                            </section>
-                            <img src="_include/img/profile/profile-02.jpg" alt="Guillermo Camacho">
-                        </section>
-                        <h3 class="profile-name">Guillermo Camacho</h3>
-                        <p class="profile-description">Ingeniero, experto en ambientes mainframe con mas de 10 años de experiencia en programaci&oacute;n, an&aacute;lisis, diseño e implementaci&oacute;n de soluciones m&oacute;viles, web, de escritorio y &eacute;xitosas aplicaciones centralizadas para bancos y corporativos.</p>
-                        <section class="social">
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                            </ul>
-                        </section>
-                    </article>
-                    <article class="span4 profile">
-                        <section class="image-wrap">
-                            <section class="hover-wrap">
-                                <span class="overlay-img"></span>
-                                <span class="overlay-text-thumb">Director inbound marketing /<br>Community manager</span>
-                            </section>
-                            <img src="_include/img/profile/profile-01.jpg" alt="Adri&aacute;n Becerra">
-                        </section>
-                        <h3 class="profile-name">Adri&aacute;n Becerra</h3>
-                        <p class="profile-description">Publicidad, mercadotecnia, diseño, redes sociales, m&uacute;sica, tecnolog&iacute;a, videojuegos. Guaguaron de todo.</p>
-                        <section class="social">
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                            </ul>
-                        </section>
-                    </article>
-                    <article class="span4 profile">
-                        <section class="image-wrap">
-                            <section class="hover-wrap">
-                                <span class="overlay-img"></span>
-                                <span class="overlay-text-thumb">Consultor especialista en<br>marketing y negocios</span>
-                            </section>
-                            <img src="_include/img/profile/profile-04.jpg" alt="Luis Reynoso">
-                        </section>
-                        <h3 class="profile-name">Luis Reynoso</h3>
-                        <p class="profile-description">Soy un hombre de color: El vino rojo; el caf&eacute; negro; el tequila blanco; las empresas verdes; y la mujer trigueña.</p>
-                        <section class="social">
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                                <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                            </ul>
-                        </section>
-                    </article>
-                </section>
-            </section>
-        </section>
-        <section id="customer" class="page">
-            <section class="container">
-                <section class="row">
-                    <section class="span12">
-                        <section class="title-page">
-                            <h2 class="title">Iniciar sesi&oacute;n</h2>
-                            <h3 class="title-description">Por favor, ingrese los datos de acceso correspondientes a su membres&iacute;a.</h3>
-                        </section>
-                    </section>
-                </section>
-               <section class="row">
-                    <section class="span6">
-                        <section class="contact-details">
-                            <h3>Membres&iacute;a Mapps&reg;&nbsp;M&eacute;xico</h3>
-                            <p>
-                                El equipo de Ventas Corporativas de Iniciativa M&oacute;vil agradece tu inter&eacute;s en utilizar a Mapps para tu campaña.<br><br>
-                                Hemos creado esta secci&oacute;n para facilitar el desarrollo de materiales creativos y reportes utilizando el diseño y el wordmark de Mapps.
-                            </p>
-                        </section>
-                    </section>
-                    <section class="span6">
-                        <form id="login-form" class="input-form" action="#">
-                            <p>
-                                <input id="username" name="username" type="text" placeholder="Nombre de usuario">
-                            </p>
-                            <p>
-                                <input id="userpass" name="userpass" name="password" type="password" placeholder="Contraseña">
-                            </p>
-                            <p id="login-response-text" class="response-text"></p>
-                            <p>
-                                <a id="login-button" class="submit"><span class="font-icon-unlock"></span>&nbsp;Ingresar</a>
-                                <a id="clear-login-button" class="reset"><span class="font-icon-remove"></span>&nbsp;Limpiar</a>
-                            </p>
-                        </form>
-                    </section>
-                </section>
-            </section>
-        </section>
-        <section id="blog" class="page-alternate">
-                <section class="container">
-                    <section class="row">
-                        <section class="span12">
-                            <section class="span12">
-                            <hgroup class="title-page">
-                                <h2 class="title">Nuestro blog</h2>
-                                <h3 class="title-description">A&uacute;n estamos trabajando en esta secci&oacute;n, estar&aacute; lista en poco tiempo.</h3>
-                            </hgroup>
-                        </section>
-                        <h3 class="spec">Publicaciones recientes</h3>
-                        <section class="info-block">
-                            <section class="info-text">
-                                <h3><span class="color-text"><span class="font-icon-blockquote"></span>&nbsp;Mi primer aporte.</span>&nbsp;Este es un ejemplo de tema redactado por m&iacute;.</h3>
-                                <cite>11 Septiembre del 2013 por Giovanni Garc&iacute;a</cite>
-                                <p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?...</p>
-                                <a class="button" target="_blank" href=""><span class="font-icon-read-more"></span></a>
-                            </section>
-                        </section>
-                        <hr>
-                        <section class="info-block">
-                            <section class="info-text">
-                                <h3><span class="color-text"><span class="font-icon-blockquote"></span>&nbsp;Mi segundo aporte.</span>&nbsp;Este es un ejemplo de tema redactado por m&iacute;.</h3>
-                                <cite>11 Septiembre del 2013 por Giovanni Garc&iacute;a</cite>
-                                <p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?...</p>
-                                <a class="button" target="_blank" href=""><span class="font-icon-read-more"></span></a>
-                            </section>
-                        </section>
-                        <hr>
-                        <section class="info-block">
-                            <section class="info-text">
-                                <h3><span class="color-text"><span class="font-icon-blockquote"></span>&nbsp;Mi tercer aporte.</span>&nbsp;Este es un ejemplo de tema redactado por m&iacute;.</h3>
-                                <cite>11 Septiembre del 2013 por Giovanni Garc&iacute;a</cite>
-                                <p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm sayin'?...</p>
-                                <a class="button" target="_blank" href=""><span class="font-icon-read-more"></span></a> 
-                            </section>
-                        </section>
-                        <hr>
-                    </section>  
-                </section>
+        <section class="col-wrap home_service"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12 our-services first">
+                        <ul>
+                            <li class="back-none1 span3 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                                <div class="flat-img"><span class="icon-leaf"></span></div>
+                                <h3><a href="#">Flat Design</a></h3>
+                                <p>Lorem ipsum dolor sit amet, elit, sed diam nonummy.</p>
+                            </li>
 
-                </section>
-            </section>
-        <section id="contact" class="page">
-            <section class="container">
-                <section class="row">
-                    <section class="span12">
-                        <section class="title-page">
-                            <h2 class="title">¿Ti&eacute;nes algo que contarnos?</h2>
-                            <h3 class="title-description">Ponte en contacto con nosotros y en breve atenderemos tus inquietudes y dudas</h3>
-                        </section>
-                    </section>
-                </section>
-                <section class="row">
-                	<section class="span9">
-                    	<form id="contact-form" class="input-form" action="#">
-                        	<p class="contact-name">
-                                <input id="contact-name" name="contact-name" type="text" placeholder="T&uacute; nombre">
-                            </p>
-                            <p class="contact-email">
-                                <input id="contact-email" name="contact-email" type="email" placeholder="T&uacute; e-mail">
-                            </p>
-                            <p class="contact-message">
-                                <textarea id="contact-message" name="contact-message" placeholder="Comentarios y sugerencias" rows="5" cols="40"></textarea>
-                            </p>
-                            <p id="contact-response-text" class="response-text"></p>
-                            <p>
-                                <a id="contact-submit-button" class="submit"><span class="font-icon-comment"></span>&nbsp;Enviar</a>
-                                <a id="clear-contact-submit" class="reset"><span class="font-icon-remove"></span>&nbsp;Limpiar</a>
-                            </p><br>
-                            <section class="fb-comments" data-href="http://www.mapps.com.mx" data-width="870" num_posts="2" order_by="reverse_time"></section>
-                        </form>
-                    </section>
-                    <section class="span3">
-                    	<section class="contact-details">
-                            <h3>Informaci&oacute;n de contacto</h3>
-                            <ul>
-                                <li><a href="#"><span class="font-icon-email_2"></span>&nbsp;info@mapps.com.mx</a></li>
-                                <li><span class="font-icon-phone"></span>&nbsp;(52) 0000-0000</li>
-                                <li>
-                                    <span class="font-icon-map-marker-2"></span>&nbsp;Insurgentes Sur 1863 - 302B<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Col. Gdlpe. Inn, Del. A. Obreg&oacute;n<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C.P. 01020<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M&eacute;xico, Distrito Federal
-                                </li>
-                                <li>
-                                    <img id="office_map" alt="office-map"><br><br>
-                                    <small>
-                                        <a href="https://maps.google.com.mx/maps?q=Insurgentes+Sur+1863&output=embed" target="_blank"><span class="font-icon-map"></span>&nbsp;Ver mapa m&aacute;s grande</a>
-                                    </small>
-                                </li>
-                            </ul>
-                        </section>
-                    </section>
-                </section>
-            </section>
-        </section>
-        <footer>
-            <section id="social-area" class="page-alternate">
-                <section class="container">
-                    <section class="row">
-                        <section class="span12">
-                            <nav id="social">
-                                <ul>
-                                    <li><a href="#" title="Vu&eacute;lvase fan en Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                                    <li><a href="#" title="S&iacute;ganos en Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                                    <li><a href="#" title="Agr&eacute;guenos a sus c&iacute;rculos" target="_blank"><span class="font-icon-social-google-plus"></span></a></li>
-                                    <li><a href="#" title="Post&uacute;lese en LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+                            <li class="back-none1 back-none480 span3 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                                <div class="flat-img"><span class="icon-monitor"></span></div>
+                                <h3><a href="#">Responsive</a></h3>
+                                <p>Lorem ipsum dolor sit amet, elit, sed diam nonummy.</p>
+                            </li>
+
+                            <li class="back-none1 span3 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                                <div class="flat-img"><span class="icon-palette"></span></div>
+                                <h3><a href="#">Unlimited colors</a></h3>
+                                <p>Lorem ipsum dolor sit amet, elit, sed diam nonummy.</p>
+                            </li>
+
+                            <li class="back-none span3 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible top-to-bottom">
+                                <div class="flat-img"><span class="icon-file-5"></span></div>
+                                <h3><a href="#">Easy to use</a></h3>
+                                <p>Lorem ipsum dolor sit amet, elit, sed diam nonummy.</p>
+                            </li>
+                        </ul>
+                        
+                        
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col --> 
+
+
+
+	
+
+        <section class="col-wrap home-inner1" id="Service"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid mb">
+                    <div class="span12 mb">
+                        <div class="welcome-main themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                            <div class="welcome"><p>Our Service</p></div>
+                        </div>
+
+                        <div class="home-images1 span12 first default_home_images1 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                            <p>We Love What We Do, and Inspire Others to Do the Same</p>                            
+                        </div>
+                    </div><!-- /.span12 -->
+
+                    <div class="span6 content_text mini_border first themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                        <h1 class="size18 title-conatct">Overview</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel iriure dolor in hendrerit. Accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis.</p>
+                            
+                    </div>
+
+                    <div class="span6 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                        <div class="accordion first_accordion">
+                            <h3>A simple shell for appropriately</h3>
+                            <div class="first_accordion_content">
+                                <p>Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut dolore magna aliquam erat volutpat. </p>
+                            </div>
+                            
+                            <h3>Shell for appropriately</h3>
+                            <div class="first_accordion_content">
+                                <p>Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                            </div>
+                            
+                            <h3>Appropriately</h3>
+                            <div class="first_accordion_content">
+                                <p>Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut dolore magna aliquam erat volutpat.Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut dolore magna aliquam erat volutpat.</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+
+        <section class="col-wrap purchase_bg"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                       <div class="purchase-now"><!-- /.purchase-now box -->
+                            <h2>Buy this theme and build your website with limitless possibilities</h2>
+                            <a href="#" class="button purchase rd-button">Purchase now</a>
+                        </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col --> 
+
+        <section class="col-wrap theme_bg mb"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12 content_pt">
+                        <div class="span4 service_box mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                            <div class="service_box_icon">
+                                <div class="icon-code-2 multiple_icon"></div>
+                            </div>
+                            <div class="multiple_text">
+                                <h1 class="size18">Theme Development</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                            </div>
+                        </div>
+
+                        <div class="span4 service_box mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                            <div class="service_box_icon">
+                                <div class="icon-newspaper-2 multiple_icon"></div>
+                            </div>
+                            <div class="multiple_text">
+                                <h1 class="size18">Website</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                            </div>
+                        </div>
+
+                        <div class="span4 service_box mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                            <div class="service_box_icon">
+                                <div class=" icon-heart  multiple_icon"></div>
+                            </div>
+                            <div class="multiple_text">
+                                <h1 class="size18">Branding</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+        <section class="col-wrap mb"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="mini_border content_heading size18 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                            <h1 class="title-conatct">What peoples say about US</h1>
+                        </div>
+
+                        <div id="myCarousel" class="carousel slide">
+                          <!-- Carousel items -->
+                            <a class="icon-arrow-left-5 carousel_button" href="#myCarousel" data-slide="prev"></a>
+                            <a class="icon-arrow-right-5 carousel_button carousel_button_right"  href="#myCarousel" data-slide="next"></a>
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="testimonial_section">
+                                    <ul>
+                                        <li class="span6 first mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                                            <div class="clearfix-inner-box1 testimonial_section_content">
+                                                <span class="icon-quote quote_icon"></span>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis. Dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                                                <div class="photo-deta">
+                                                    <div class="left-photo">
+                                                        <img src="images/quote.png" alt="">
+                                                    </div>
+                                                    <div class="left-detail">
+                                                        <h2>Name H Spaces</h2>
+                                                        <h3>Company</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial_section_content_style"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>
+
+                                        <li class="span3 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                                            <div class="clearfix-inner-box1 testimonial_section_content">
+                                                <span class="icon-quote quote_icon"></span>
+                                                <p>Lorem ipsum dolor sit amet, sed diam nonummy nibh ut laoreet dolore. Lorem ipsum dolor sit amet, adipiscing elit, sed nibh euismod. dolore. Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                                                <div class="photo-deta">
+                                                    <div class="left-photo">
+                                                        <img src="images/quote.png" alt="">
+                                                    </div>
+                                                    <div class="left-detail">
+                                                        <h2>Name H Spaces</h2>
+                                                        <h3>Company</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial_section_content_style"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>
+
+                                        <li class="span3 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                                            <div class="clearfix-inner-box1 testimonial_section_content">
+                                                <span class="icon-quote quote_icon"></span>
+                                                <p>Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh  ut laoreet dolore. Lorem ipsum dolor sit amet, adipiscing elit, diam nonummy nibh.</p>
+                                                <div class="photo-deta">
+                                                    <div class="left-photo">
+                                                        <img src="images/quote.png" alt="">
+                                                    </div>
+                                                    <div class="left-detail">
+                                                        <h2>Name H Spaces</h2>
+                                                        <h3>Company</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial_section_content_style"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>                            
+                                    </ul>
+                                </div>
+                              <div class="clear"></div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="testimonial_section">
+                                    <ul>
+                                        <li class="span6 first mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                                            <div class="clearfix-inner-box1 testimonial_section_content">
+                                                <span class="icon-quote quote_icon"></span>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis. Dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                                                <div class="photo-deta">
+                                                    <div class="left-photo">
+                                                        <img src="images/quote.png" alt="">
+                                                    </div>
+                                                    <div class="left-detail">
+                                                        <h2>Name H Spaces</h2>
+                                                        <h3>Company</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial_section_content_style"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>
+
+                                        <li class="span3 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                                            <div class="clearfix-inner-box1 testimonial_section_content">
+                                                <span class="icon-quote quote_icon"></span>
+                                                <p>Lorem ipsum dolor sit amet, sed diam nonummy nibh ut laoreet dolore. Lorem ipsum dolor sit amet, adipiscing elit, sed nibh euismod. dolore. Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                                                <div class="photo-deta">
+                                                    <div class="left-photo">
+                                                        <img src="images/quote.png" alt="">
+                                                    </div>
+                                                    <div class="left-detail">
+                                                        <h2>Name H Spaces</h2>
+                                                        <h3>Company</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial_section_content_style"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>
+
+                                        <li class="span3 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                                            <div class="clearfix-inner-box1 testimonial_section_content">
+                                                <span class="icon-quote quote_icon"></span>
+                                                <p>Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh  ut laoreet dolore. Lorem ipsum dolor sit amet, adipiscing elit, diam nonummy nibh.</p>
+                                                <div class="photo-deta">
+                                                    <div class="left-photo">
+                                                        <img src="images/quote.png" alt="">
+                                                    </div>
+                                                    <div class="left-detail">
+                                                        <h2>Name H Spaces</h2>
+                                                        <h3>Company</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial_section_content_style"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>                            
+                                    </ul>
+                                </div>    
+                                <div class="clear"></div>                          
+                            </div>
+
+
+                            <div class="item">
+                                <div class="testimonial_section">
+                                    <ul>
+                                        <li class="span6 first mb">
+                                            <div class="clearfix-inner-box1 testimonial_section_content">
+                                                <span class="icon-quote quote_icon"></span>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis. Dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                                                <div class="photo-deta">
+                                                    <div class="left-photo">
+                                                        <img src="images/quote.png" alt="">
+                                                    </div>
+                                                    <div class="left-detail">
+                                                        <h2>Name H Spaces</h2>
+                                                        <h3>Company</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial_section_content_style"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>
+
+                                        <li class="span3 mb">
+                                            <div class="clearfix-inner-box1 testimonial_section_content">
+                                                <span class="icon-quote quote_icon"></span>
+                                                <p>Lorem ipsum dolor sit amet, sed diam nonummy nibh ut laoreet dolore. Lorem ipsum dolor sit amet, adipiscing elit, sed nibh euismod. dolore. Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                                                <div class="photo-deta">
+                                                    <div class="left-photo">
+                                                        <img src="images/quote.png" alt="">
+                                                    </div>
+                                                    <div class="left-detail">
+                                                        <h2>Name H Spaces</h2>
+                                                        <h3>Company</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial_section_content_style"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>
+
+                                        <li class="span3 mb">
+                                            <div class="clearfix-inner-box1 testimonial_section_content">
+                                                <span class="icon-quote quote_icon"></span>
+                                                <p>Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh  ut laoreet dolore. Lorem ipsum dolor sit amet, adipiscing elit, diam nonummy nibh.</p>
+                                                <div class="photo-deta">
+                                                    <div class="left-photo">
+                                                        <img src="images/quote.png" alt="">
+                                                    </div>
+                                                    <div class="left-detail">
+                                                        <h2>Name H Spaces</h2>
+                                                        <h3>Company</h3>
+                                                    </div>
+                                                </div>
+                                                <div class="testimonial_section_content_style"></div>
+                                            </div>
+                                            <div class="clear"></div>
+                                        </li>                            
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                      
+                          <div class="clear"></div>
+                        </div>
+                    </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->  
+
+        <section class="col-wrap  home-bot-part mb" id="intro"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12 titlebar parallax_title themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                        <h1 class="size28 text_center">Pioneer is carefully hand-crafted with focused on simplicity, and keen eyes on every details.</h1>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+        <section class="col-wrap home-inner1" id="about"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid mb">
+                    <div class="span12">
+                        <div class="welcome-main arrow_box themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                            <div class="welcome"><p>About us</p></div>
+                        </div>
+                        <div class="home-images1 span12 first default_home_images1 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                            <p>We are passionate and forward thinkers</p>                            
+                        </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+        <section class="col-wrap mb default_theme_bg"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid content_pt">
+                    <div class="about-detail span12 first">
+                        <div class="about-det-bot span12  first">
+                            <div class="det-bot-left-ab span7 first mini_border mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                                <h1 class="size18 title-conatct">Who we are</h1>
+                                <div id="tabs">
+                                    <ul>
+                                        <li><a href="#tabs-1">Overview</a></li>
+                                        <li><a href="#tabs-2">History</a></li>
+                                        <li><a href="#tabs-3">Partners</a></li>
+                                        <li><a href="#tabs-4">Mission</a></li>
+                                    </ul>
+                                   <div id="tabs-1" class="inner-tab1">
+                                        
+                                        <a href="#"><img src="style-1/tab_01.jpg" class="span12 mb" alt=""></a>
+                                         <p class="span12 first">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+                                    </div>
+                                    <div id="tabs-2" class="inner-tab1">
+                                        
+                                        <a href="#"><img src="style-1/tab_02.jpg" class="span12 mb" alt=""></a>
+                                         <p class="span12 first">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+                                    </div>
+                                    <div id="tabs-3" class="inner-tab1">
+                                        
+                                        <a href="#"><img src="style-1/tab_03.jpg" class="span12 mb" alt=""></a>
+                                         <p class="span12 first">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+                                    </div>
+                                    <div id="tabs-4" class="inner-tab1">
+                                        
+                                        <a href="#"><img src="style-1/tab_04.jpg" class="span12 mb" alt=""></a>
+                                         <p class="span12 first">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="span5 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                                <div class="span12 mini_border mb">
+                                    <h1 class="size18 title-conatct">Why Chose us?</h1>
+                                    
+                                    <div class="accordion first_accordion">
+                                        <h3>A simple shell for appropriately</h3>
+                                        <div class="first_accordion_content">
+                                            <p>Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut dolore magna aliquam erat volutpat. </p>
+                                        </div>
+                                        
+                                        <h3>Shell for appropriately</h3>
+                                        <div class="first_accordion_content">
+                                            <p>Lorem ipsum dolor sit amet, consectetuer elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam.</p>
+                                        </div>
+                                        
+                                        <h3>Appropriately</h3>
+                                        <div class="first_accordion_content">
+                                            <p>Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut dolore magna aliquam erat volutpat.Dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut dolore magna aliquam erat volutpat.</p>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                
+
+                                <div class="det-bot-right-ab span12 first mini_border mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                                    <h1 class="size18 title-conatct">Our Skills</h1>
+                                    <ul class="skillset themeapt-progress-bar-container themeapt_animate_when_almost_visible">
+                                    
+                                    <li class="skill_set_item themeapt-progress-bar">
+                                        <p>90% <span>Adobe Photoshop</span></p>
+                                        <div class="progress-bar">
+                                            <div class="bar-outer"> 
+                                                <div class="progress-bar-content" data-percentage="90" style="width: 90%;"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="skill_set_item themeapt-progress-bar">
+                                        <p>70% <span>Wordpress</span></p>
+                                        <div class="progress-bar">
+                                            <div class="bar-outer"> 
+                                                <div class="progress-bar-content" data-percentage="70" style="width: 70%;"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="skill_set_item themeapt-progress-bar">
+                                        <p>80% <span>HTML 5</span></p>
+                                        <div class="progress-bar">
+                                            <div class="bar-outer"> 
+                                                <div class="progress-bar-content" data-percentage="50" style="width: 80%;"></div>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
-                            </nav>
-                        </section>
-                    </section>
-                </section>
-            </section>
-            <p class="credits"><img src="_include/img/logo_footer.png" alt="logo_footer">&nbsp;&nbsp;&copy;&nbsp;2013 <a href="#">Iniciativa M&oacute;vil</a> Todos los derechos son reservados.</p>
-        </footer>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="_include/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="_include/js/waypoints.js"></script>
-        <script type="text/javascript" src="_include/js/waypoints-sticky.js"></script>
-        <script type="text/javascript" src="_include/js/jquery.isotope.js"></script>
-        <script type="text/javascript" src="_include/js/jquery.fancybox.pack.js"></script>
-        <script type="text/javascript" src="_include/js/jquery.fancybox-media.js"></script>
-        <script type="text/javascript" src="_include/js/plugins.js"></script>
-        <script type="text/javascript" src="_include/js/script.js"></script>
-    </body>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+
+        <section class="col-wrap home-inner1"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid mb">
+                    <div class="span12 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                         <div class="home-images1 span12 first">
+                            <p>Meet the Team, who make everything possible.</p>                            
+                        </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+
+
+        <section class="col-wrap"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid mb">
+                    <div class="span12 first team-top-inner">                         
+                        <div class="top-inner-box1 span4 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                            <div class="view view-third">
+                                <img src="style-1/team_01.jpg" alt="" />                                        
+                                <div class="mask">
+                                    <a href="#" class="info icon-twitter"></a>
+                                    <a href="#" class="info icon-dribbble"></a>
+                                    <a href="#" class="info icon-linkedin"></a>                                            
+                                </div>                                        
+                            </div> 
+
+                            <div class="border"></div>
+
+                            <div class="inner-box1-bot">
+                                <h2>Nick Deo</h2>
+                                <h3>Founder</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ut laoreet dolore magna.</p>
+                            </div>
+                        </div>
+                        <div class="top-inner-box1 span4 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                            <div class="view view-third">
+                                <img src="style-1/team_02.jpg" alt="" />                                        
+                                <div class="mask">
+                                    <a href="#" class="info icon-twitter"></a>
+                                    <a href="#" class="info icon-dribbble"></a>
+                                    <a href="#" class="info icon-linkedin"></a>                                            
+                                </div>                                        
+                            </div> 
+                            <div class="border"></div>
+                            <div class="inner-box1-bot">
+                                <h2>Jeff Spinser</h2>
+                                <h3>Sr. Developer</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ut laoreet dolore magna.</p>
+                            </div>
+                        </div>
+                        <div class="top-inner-box1 span4 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                            <div class="view view-third">
+                                <img src="style-1/team_03.jpg" alt="" />                                        
+                                <div class="mask">
+                                    <a href="#" class="info icon-twitter"></a>
+                                    <a href="#" class="info icon-dribbble"></a>
+                                    <a href="#" class="info icon-linkedin"></a>                                            
+                                </div>                                        
+                            </div> 
+                            <div class="border"></div>
+                            <div class="inner-box1-bot">
+                                <h2>Chris William</h2>
+                                <h3>Creative Designer</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ut laoreet dolore magna.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col --> 
+
+        <section class="col-wrap mb"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid content_pt">
+                    <div class="about-detail span12 first">
+                        <div class="span12 det-bot-left-ab first mini_border mb">
+                            
+                            <h1 class="size18 title-conatct">Our Clients</h1>
+
+                            <div class="our_client themeapt-gallery  themeapt_animate_when_visible">
+                                <ul class="themeapt-gallery-thumb">
+                                    <li>
+                                        <a href="#"><img src="style-1/client_logo_01.jpg" alt=""></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="style-1/client_logo_02.jpg" alt=""></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="style-1/client_logo_03.jpg" alt=""></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="style-1/client_logo_04.jpg" alt=""></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="style-1/client_logo_05.jpg" alt=""></a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="style-1/client_logo_06.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                                                     
+                        </div>
+                    </div> 
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+ 
+        <section class="col-wrap about-last-part" id="second"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                       <div class="purchase-now default_purchase-now"><!-- /.purchase-now box -->
+                            <h2>Pioneer is carefully hand-crafted with focused on simplicity, and keen eyes on every details.</h2>
+                            <a href="#" class="button rd-button">Purchase now</a>
+                        </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+        <section class="col-wrap" id="portfolio"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid mb">
+                    <div class="span12">
+                        <div class="welcome-main arrow_box themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                            <div class="welcome"><p>Portfolio</p></div>
+                        </div>                        
+                    </div><!-- /.span12 -->
+
+                    <div id="filters" class="our-work-nav span12 first themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                        <ul>
+                            <li><a href="#" data-filter="*" class="active_1">ALL</a></li>   
+                            <li><a href="#" data-filter=".themes">Themes</a></li>
+                            <li><a href="#" data-filter=".websites">Websites</a></li>
+                            <li><a href="#" data-filter=".branding">Branding</a></li>
+                            <li><a href="#" data-filter=".photography">Photography</a></li>
+                        </ul>
+                    </div>                    
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col --> 
+
+        <section class="col-wrap our-work-bot" id="portfolio-wrap" >
+            <div class="portfolio-item one-third column our-work-img1 websites branding themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                <div class="portfolio">
+                    <a href="#" class="portfolio_content_img"><img src="style-1/portfolio_thumb_01.jpg" alt=""></a>
+                    <div class="our-work-img1-hov">
+                        <h2><a href="projects/portfolio1.html" class="simple-ajax-popup-align-top"><img src="images/img_icon1.png" alt=""></a></h2>
+                        <h3>Project Title Goes Here</h3>
+                        <h4><a href="#">Category</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class=" portfolio-item one-third column our-work-img1 websites themes photography themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                <div class="portfolio">
+                    <a href="#" class="portfolio_content_img"><img src="style-1/portfolio_thumb_02.jpg" alt=""></a>
+                    <div class="our-work-img1-hov">
+                        <h2><a href="projects/portfolio2.html" class="simple-ajax-popup-align-top"><img src="images/img_icon1.png" alt=""></a></h2>
+                        <h3>Project Title Goes Here</h3>
+                        <h4><a href="#">Category</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item one-third column our-work-img1 websites branding themes themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                <div class="portfolio" >
+                    <a href="#" class="portfolio_content_img"><img src="style-1/portfolio_thumb_03.jpg" alt=""></a>
+                    <div class="our-work-img1-hov">
+                        <h2><a href="projects/portfolio3.html" class="simple-ajax-popup-align-top"><img src="images/img_icon1.png" alt=""></a></h2>
+                        <h3>Project Title Goes Here</h3>
+                        <h4><a href="#">Category</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item one-third column our-work-img1 none-inner  websites branding photography themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible top-to-bottom">
+                <div class="portfolio">
+                    <a href="#" class="portfolio_content_img"><img src="style-1/portfolio_thumb_04.jpg" alt=""></a>
+                    <div class="our-work-img1-hov">
+                        <h2><a href="projects/portfolio4.html" class="simple-ajax-popup-align-top"><img src="images/img_icon1.png" alt=""></a></h2>
+                        <h3>Project Title Goes Here</h3>
+                        <h4><a href="#">Category</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item one-third column our-work-img1 websites branding photography themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                <div class="portfolio">
+                    <a href="#" class="portfolio_content_img"><img src="style-1/portfolio_thumb_05.jpg" alt=""></a>
+                    <div class="our-work-img1-hov">
+                        <h2><a href="projects/portfolio5.html" class="simple-ajax-popup-align-top"><img src="images/img_icon1.png" alt=""></a></h2>
+                        <h3>Project Title Goes Here</h3>
+                        <h4><a href="#">Category</a></h4>
+                    </div>
+               </div>
+            </div>
+            <div class="portfolio-item one-third column our-work-img1 themes branding photography themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                <div class="portfolio">
+                    <a href="#" class="portfolio_content_img"><img src="style-1/portfolio_thumb_06.jpg" alt=""></a>
+                    <div class="our-work-img1-hov">
+                        <h2><a href="projects/portfolio6.html" class="simple-ajax-popup-align-top"><img src="images/img_icon1.png" alt=""></a></h2>
+                        <h3>Project Title Goes Here</h3>
+                        <h4><a href="#">Category</a></h4>
+                    </div>  
+                </div>
+            </div>
+            <div class="portfolio-item one-third column our-work-img1 themes websites branding themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                <div class="portfolio">
+                    <a href="#" class="portfolio_content_img"><img src="style-1/portfolio_thumb_07.jpg" alt=""></a>
+                    <div class="our-work-img1-hov">
+                        <h2><a href="projects/portfolio7.html" class="simple-ajax-popup-align-top"><img src="images/img_icon1.png" alt=""></a></h2>
+                        <h3>Project Title Goes Here</h3>
+                        <h4><a href="#">Category</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item one-third column our-work-img1 none-inner themes websites photography themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                <div class="portfolio">
+                    <a href="#" class="portfolio_content_img"><img src="style-1/portfolio_thumb_08.jpg" alt=""></a>
+                    <div class="our-work-img1-hov">
+                        <h2><a href="projects/portfolio8.html" class="simple-ajax-popup-align-top"><img src="images/img_icon1.png" alt=""></a></h2>
+                        <h3>Project Title Goes Here</h3>
+                        <h4><a href="#">Category</a></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="col-wrap home-bot-serv" id="third"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                       <div class="purchase-now default_purchase-now"><!-- /.purchase-now box -->
+                            <h2>We Combine simplicity and usability to deliver valuable output.</h2>
+                            <a href="#" class="button rd-button">Purchase now</a>
+                        </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+
+        <section class="col-wrap" id="blog"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid mb">
+                    <div class="span12 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                        <div class="articles-title arrow_box">
+                            <div class="welcome"><p>Blog</p></div>
+                        </div>                        
+                    </div><!-- /.span12 -->
+
+                    <div class="span12 first articles-bottom mb">
+                        <div class="articles-detail span4 first mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                            <div class="articles-img">
+                                <a href="projects/project1.html" class="simple-ajax-popup-align-top"><img src="style-1/blog_01.jpg" alt="" /></a>
+                            </div>
+                            <div class="articles-name"><a href="projects/project1.html" class="simple-ajax-popup-align-top">adipiscing elit sed</a></div>
+                            <div class="articles-date">24.08.2013, by <a href="#">Admin</a></div>
+                            <div class="share-images">
+                                <div class="share-total"><a href="#" ><span class="icon-export"></span>200 Shares</a></div>
+                                <div class="img-share"><a href="#" class="icon-image"></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="articles-detail span4 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                            <div class="articles-img">
+                                <a href="projects/project2.html" class="simple-ajax-popup-align-top"><img src="style-1/blog_02.jpg" alt="" /></a>
+                            </div>
+                            <div class="articles-name"><a href="projects/project2.html" class="simple-ajax-popup-align-top">Sed diam nonummy</a></div>
+                            <div class="articles-date">24.08.2013, by <a href="#">Admin</a></div>
+                            <div class="share-images">
+                                <div class="share-total"><a href="#" ><span class="icon-export"></span>200 Shares</a></div>
+                                <div class="img-share"><a href="#" class="icon-video"></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                      
+                        <div class="articles-detail span4 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                            <div class="articles-img">
+                                <a href="projects/project3.html" class="simple-ajax-popup-align-top"><img src="style-1/blog_03.jpg" alt="" /></a>
+                            </div>
+                            <div class="articles-name"><a href="projects/project3.html" class="simple-ajax-popup-align-top">euismod tincidunt ut</a></div>
+                            <div class="articles-date">24.08.2013, by <a href="#">Admin</a></div>
+                            <div class="share-images">
+                                <div class="share-total"><a href="#" ><span class="icon-export"></span>200 Shares</a></div>
+                                <div class="img-share"><a href="#" class="icon-link-2"></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="articles-detail span4 first mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                            <div class="articles-img">
+                                <a href="projects/project4.html" class="simple-ajax-popup-align-top"><img src="style-1/blog_04.jpg" alt="" /></a>
+                            </div>
+                            <div class="articles-name"><a href="projects/project4.html" class="simple-ajax-popup-align-top">adipiscing elit sed</a></div>
+                            <div class="articles-date">24.08.2013, by <a href="#">Admin</a></div>
+                            <div class="share-images">
+                                <div class="share-total"><a href="#" ><span class="icon-export"></span>200 Shares</a></div>
+                                <div class="img-share"><a href="#" class="icon-image"></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="articles-detail span4 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                            <div class="articles-img">
+                                <a href="projects/project5.html" class="simple-ajax-popup-align-top"><img src="style-1/blog_05.jpg" alt="" /></a>
+                            </div>
+                            <div class="articles-name"><a href="projects/project5.html" class="simple-ajax-popup-align-top">Sed diam nonummy</a></div>
+                            <div class="articles-date">24.08.2013, by <a href="#">Admin</a></div>
+                            <div class="share-images">
+                                <div class="share-total"><a href="#" ><span class="icon-export"></span>200 Shares</a></div>
+                                <div class="img-share"><a href="#" class="icon-video"></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                      
+                        <div class="articles-detail span4 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                            <div class="articles-img">
+                                <a href="projects/project6.html" class="simple-ajax-popup-align-top"><img src="style-1/blog_06.jpg" alt="" /></a>
+                            </div>
+                            <div class="articles-name"><a href="projects/project6.html" class="simple-ajax-popup-align-top">euismod tincidunt ut</a></div>
+                            <div class="articles-date">24.08.2013, by <a href="#">Admin</a></div>
+                            <div class="share-images">
+                                <div class="share-total"><a href="#" ><span class="icon-export"></span>200 Shares</a></div>
+                                <div class="img-share"><a href="#" class="icon-link-2"></a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+
+                    <div class="span12">
+                        <div class="articles-last-img">
+                            <a href="#" class="icon-loop-3 size24"></a>
+                        </div>
+                    </div>
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+        <section class="col-wrap about-quality-part mb" id="fourth"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                       <div class="purchase-now default_purchase-now"><!-- /.purchase-now box -->
+                            <h2>We Combine simplicity and usability to deliver valuable output.</h2>
+                            <a href="#" class="button purchase rd-button">Purchase now</a>
+                        </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+        
+        <section class="col-wrap" id="contact"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid mb">
+                    <div class="span12 themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                        <div class="contact-title arrow_box title_contact">
+                            <div class="welcome"><p>Get in touch</p></div>
+                        </div>
+                    </div><!-- /.span12 -->
+
+                    <div class="span4 first contact-bottom themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                        <form method="post">
+                            <div class="contact-form">
+                                <div class="title-conatct">Send Message</div>
+                                <div class="title-img mb"><img src="images/title_line.png" alt="" /></div>
+                                <div class="contact-field">
+                                    <div class="field-name">Your Name</div>
+                                    <input type="text" />
+                                </div>
+                                <div class="contact-field">
+                                    <div class="field-name">Email</div>
+                                    <input type="text" />
+                                </div>
+                                <div class="contact-field">
+                                    <div class="field-name">Subject</div>
+                                    <input type="text" />
+                                </div>
+                                <div class="contact-field">
+                                    <div class="field-name">Message</div>
+                                    <textarea></textarea>
+                                </div>
+                                <div class="btn-contact rd-button"><a onClick="alert('Contact form will work with Purchased version.'); return false;"  href="#">Send</a></div>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+
+                    </div>
+
+
+                    <div class="span8 contact-map themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                        <div class="title-conatct">Find us on map</div>
+                        <div class="title-img mb"><img src="images/title_line.png" alt="" /></div>
+                            <div class="map">
+                               <iframe height="397" src="https://maps.google.co.in/maps?f=d&amp;source=s_d&amp;saddr=Envato+Pty+Ltd,+Elizabeth+Street,+Melbourne,+Victoria,+Australia&amp;daddr=&amp;hl=en&amp;geocode=&amp;aq=0&amp;oq=envato+pty+melbourne&amp;sll=21.1592,72.822296&amp;sspn=0.321456,0.617294&amp;mra=ls&amp;ie=UTF8&amp;ll=-37.817942,144.964977&amp;spn=0.006295,0.007969&amp;t=m&amp;iwloc=ddw0&amp;output=embed"></iframe>
+                            </div>
+
+                    </div>
+
+
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+        <section class="col-wrap default_theme_bg"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid content_pt mb">
+                    <div class="span12">
+                        <div class="span4 first mini_border mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                            <h1 class="size18 title-conatct">Location</h1>
+
+                            <div class="address">
+                                <p><span class="icon-home"></span>13/2 Elizabeth Street<br/>Melbourne VIC 3000, Australia</p>
+                            </div>
+
+                        </div>
+
+                         <div class="span4 mini_border mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                            <h1 class="size18 title-conatct">Call Us</h1>
+
+                            <div class="address">
+                                <p><span class="icon-mobile"></span>+123 4567 8901, +987 4561 2301</p>
+                            </div>
+
+                        </div>
+
+
+                         <div class="span4 mini_border mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                            <h1 class="size18 title-conatct">Connect with us</h1>
+
+                                <div class="social-icon">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="icon-googleplus"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="icon-dribbble"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="icon-vimeo "></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="icon-twitter"></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="icon-pinterest "></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="icon-linkedin"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                           
+
+                        </div>
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+
+
+
+        <section class="col-wrap footer-bottom content_pt"><!-- /.promo_box -->
+            <div class="container">
+                <div class="row-fluid mb">
+                    <div class="span12">
+                        <div class="footer-bottom-left span4 first mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible left-to-right">
+                            <div class="footer-title">Recent Tweets <span>@envato</span></div>
+                            <div class="title-img"><img src="images/title_line.png" alt="" /></div>
+                            <div class="footer-detail">
+                                <p><span>@caskifer</span> Be sure to also check your spam folder. If it's not there, I would need the Ticket ID. Thanks ^TC</p>
+                                <div class="footer-date">23 Auguest</div>
+                            </div>
+                            <div class="footer-detail">
+                                <p>What Are the Most Inspiring Envato Marketplace Moments of All Time? <span>http://enva.to/15c3faP</span> </p>
+                                <div class="footer-date">2 Days</div>
+                            </div>
+                            <div class="footer-detail">
+                                <p>Just a normal day at the <span>#envato</span> office <span>http://instagram.com/p/dTpx4XHX76/ </span></p>
+                                <div class="footer-date">5 Days</div>
+                            </div>
+                        </div>
+                        
+                        <div class="footer-bottom-center span4 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible bottom-to-top">
+                            <div class="footer-title">Subscribe to our newsletter</div>
+                            <div class="title-img"><img src="images/title_line.png" alt="" /></div>
+                            <div class="subscribe">
+                                <div class="subscribe-title">Sit amet, elit, sed nonummy nibh euismod.</div>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                                <input type="text" placeholder='Enter Your Email address...' onClick="this.placeholder=''" onBlur="this.placeholder='Enter Your Email address...'" />
+                                <div class="btn btn-default btn-sub rd-button"><a href="#">Subscribe</a></div>
+                            </div>
+                        </div>
+
+                        <div class="footer-bottom-right span4 mb themeapt_animated_text themeapt_text  themeapt_animate_when_almost_visible right-to-left">
+                            <div class="footer-title">Flickr photos</div>
+                            <div class="title-img"><img src="images/title_line.png" alt="" /></div>
+                            <div class="photos">
+                                <ul>
+                                    <li>
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_01.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_02.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_03.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li class="last-li">
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_04.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_05.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_06.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_07.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li class="last-li">
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_04.jpg">
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_02.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_01.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_05.jpg">
+                                        </a>
+                                    </li>
+
+                                    <li class="last-li">
+                                        <a class="footer-mask" href="#">
+                                            <div class="footer-link">
+                                                <i class="icon-flickr icon"></i>
+                                            </div>
+                                            <img title="Image" alt="Image" src="style-1/flickr_06.jpg">
+                                        </a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div><!-- /.span12 -->
+                </div><!-- /.row-fluid -->                  
+            </div><!--Container-->
+        </section><!-- /.col -->
+        <!-- START COPY RIGHT -->
+        <section class="copy-right">
+        	<section class="copy-right-in">Copyright 2013, Iniciativa Móvil.</section>
+        </section>
+
+</div>	
+<!-- PARALLAX START -->
+
+
+<!--
+    ///////////////////////////////////////////
+    ///                JS                  ////
+    //////////////////////////////////////////-->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!--image animation Javascripts Start -->    
+    <script type='text/javascript' src='js/waypoints.js'></script>
+    <script type='text/javascript' src='js/image_animation.js'></script>
+    
+    <script>
+        jQuery(document).ready(function() {
+            //navigation menu
+            jQuery(".main-menu li").hover(function () {
+                jQuery(this).toggleClass("main_menu_hover", 500);
+            });
+            
+            //about us box
+            jQuery(".top-box-inner1").hover(function () {
+                jQuery(this).toggleClass("top-box-inner1_hover", 500);
+            });
+            
+            //purchase
+            jQuery(".purch-button").hover(function () {
+                jQuery(this).toggleClass("purch-button-hover", 500);
+            });
+            
+            jQuery(".btn-contact").hover(function () {
+                jQuery(this).toggleClass("purch-button-hover", 500);
+            });
+            
+            jQuery(".btn-contact-email").hover(function () {
+                jQuery(this).toggleClass("purch-button-hover", 500);
+            });
+
+            jQuery('.fullwidthbanner').revolution({
+							delay:9000,
+							startwidth:998,
+							startheight:502, 
+							navigationType:"none",	 
+							fullWidth:"on",
+							shadow:0							
+			});
+            jQuery(".tinynav").selectbox();
+            
+            jQuery('.follower a.sr').click(function() {//Next and Prev action
+                jQuery('.search-bar').addClass('show');
+                });
+                jQuery('.close').click(function() {//Next and Prev action
+                jQuery('.search-bar').removeClass('show');
+            });
+        });
+    </script>
+
+    <script type='text/javascript'>//<![CDATA[ 
+        jQuery(window).load(function(){
+        jQuery('#mobnav-btn').click(
+
+        function () {
+            jQuery('.sf-menu').toggleClass("xactive");
+        });
+
+        jQuery('.mobnav-subarrow').click(
+        function () {
+            jQuery(this).parent().toggleClass("xpopdrop");
+
+
+        });
+    });//]]>  
+
+    </script>
+
+<!-- TAB START -->
+    <script src="js/jquery-1.9.1.js"></script>
+    
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script>
+        jQuery(function() {
+            jQuery( "#tabs" ).tabs();
+
+            jQuery( ".accordion" ).accordion({
+                autoHeight: false,
+                collapsible: true,
+                active: false
+            });
+
+        });
+    </script>
+
+
+    <!--Image Preloder JS-->
+    <script type="text/javascript" src="js/jquery.preloader.js"></script>
+
+    <script type="text/javascript">
+    jQuery(function(){
+        
+        jQuery(".container").preloader();
+        
+        });
+    </script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+
+            jQuery('.simple-ajax-popup-align-top').magnificPopup({
+               preloader: true,
+              type: 'ajax',
+              alignTop: true,
+              overflowY: 'scroll',
+              mainClass: 'mfp-no-margins mfp-with-zoom mfp-fade',
+              zoom: {
+                enabled: true,
+                duration: 300,
+                easing: 'ease-in-out', 
+              },callbacks: {
+                    beforeOpen: function() {
+                    var current_url = jQuery(this).attr('href');
+                    //jQuery("#next_project").;
+                    //alert('Start of popup initialization  '+current_url);
+                  }
+                }
+
+            });
+  
+      });
+    </script>
+
+    <!--Pop Up JS-->
+
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- TAB END -->    
+    <script type="text/javascript" src="js/jquery.queryloader2.js"></script>
+	<script type="text/javascript">
+            jQuery(function() {
+        /*----------------------------------------------------*/
+    // PRELOADER CALLING
+    /*----------------------------------------------------*/    
+    jQuery("body.onepage").queryLoader2({
+        barColor: "#f26f21",
+        backgroundColor: "#ffffff",
+        percentage: true,
+        barHeight: 3,
+        completeAnimation: "fade",
+        minimumTime: 200
+    }); 
+    document.getElementById("hideAll").style.display = "none";  
+          });
+    </script> 
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script> 
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <script type="text/javascript" src="js/jquery.fittext.js"></script> 
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/selectnav.min.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/bootstrap-modal.js"></script>
+    <!-- HEADER TOP SLIDER START --> 
+    <script type="text/javascript" src="js/isotope.js"></script>    
+    <!-- PARALLAX START -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- Front End Style and Javascripts Start -->
+	<script type="text/javascript" src="front-end-ops/js/iris.js"></script>
+	<script type="text/javascript" src="front-end-ops/js/front-end-customize.js"></script> 	
+	<!-- Front End Style and Javascripts End -->
+  	<!-- jquery.typer START -->
+    <script type="text/javascript" src="js/jquery.typer.js"></script>
+	<!-- jQuery KenBurn Slider  -->
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	 <script type="text/javascript">
+	 $(function(){ $("#typed").typer(["Fully Responsive", "Multiple Layouts", "Unlimited Color", "Retina Ready Site"]); });
+	</script>
+</body>
 </html>
