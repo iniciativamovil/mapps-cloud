@@ -1,0 +1,120 @@
+@import '//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css';
+@import 'colorbox.css';
+
+body {
+	color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: bold;
+	letter-spacing: -0.08em;
+}
+
+h2 {
+	font-size: 4.5em;
+	
+}
+
+h3 {
+	font-size: 2em;
+	
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+footer {
+	font-size: .875em;
+	padding: 50px 0;
+}
+
+.btn {
+	border-radius: 0;
+	font-weight: lighter;
+}
+
+.btn-lg {
+	padding: 15px;
+}
+
+.page-section {
+	margin: 50px auto 50px;
+}
+
+#home {
+	background: url(../images/bg.jpg) fixed repeat;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.view {
+	cursor: default;
+	overflow: hidden;
+	position: relative;
+}
+
+.view .mask {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0 15px;
+}
+.view .mask .inner-mask {
+	width: 100%;
+	height: 100%;
+	background: rgba(51,51,51,0);
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+}
+
+.view .mask .inner-mask:hover {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(51,51,51,0.9);
+}
+
+.view .mask h3 {
+	color: #fff;
+	padding-top: 0;
+	opacity: 0;
+	-ms-opacity: 0;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	-o-opacity: 0;
+	transition: all 0.5s 0s ease-in-out;
+	-webkit-transition: all 0.5s 0s ease-in-out;
+	-moz-transition: all 0.5s 0s ease-in-out;
+	-o-transition: all 0.5s 0s ease-in-out;
+}
+
+.view .mask p {
+	color: #fff;
+	opacity: 0;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	-o-opacity: 0;
+}
+
+.view .mask .inner-mask:hover h3{opacity:1;-webkit-opacity:1;-moz-opacity:1;-o-opacity:1;padding-top:30%;transition-delay:0.3s;-moz-transition-delay:0.3s;-o-transition-delay:0.3s;-webkit-transition-delay:0.3s;}
+.view .mask .inner-mask:hover p{opacity:1;-webkit-opacity:1;-moz-opacity:1;-o-opacity:1;transition-delay:0.6s;-webkit-transition-delay:0.6s;-moz-transition-delay:0.6s;-o-transition-delay:0.6s;-ms-transition-delay:0.6s;}
